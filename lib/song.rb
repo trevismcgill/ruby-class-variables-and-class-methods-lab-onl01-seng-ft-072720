@@ -44,6 +44,7 @@ def self.genre_count
   genre_hash = {}
 #Need to populate hash / Key is genre value is number
 @@genres.each do |genre|
+  binding.pry
   if genre_hash[genre]
     genre_hash[genre] += 1
   else
